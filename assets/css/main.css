@@ -1,0 +1,42 @@
+/* Wire Frame: TODO delete later */
+header, main, footer{
+    border: 1px solid navy;
+}
+
+
+/* reset */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* element selectors */
+body{
+    display:flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+}
+
+header, main, footer{
+    padding: 1.5rem;
+}
+main{
+    flex-grow: 1;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+/* classes */
+.mt-{
+    margin-top: 0.75rem;
+}
+.pt{
+    padding-top: 1.5rem;
+}
