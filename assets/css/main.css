@@ -37,8 +37,8 @@ section{
     padding: 10px;
 }
 .header{
-    background-color: rgb(119, 160, 37);
     vertical-align: middle;
+    background-color: yellowgreen;
 }
 .header-h1{
     background-color: white;
@@ -46,7 +46,7 @@ section{
     border-radius: 8px;
     color: green;
 }
-.footer{
+footer{
     text-align: center;
 }
 
@@ -60,14 +60,12 @@ section{
 } */
 
 .picture{
-   display: flex;
     width: 125px;
     height: 120px;
     border-radius: 15px;
     margin-bottom: 15px;
-    justify-content: center;
 }
-.underscore__nav > a{
+.nav > a{
     text-decoration: none;
     color: black;
     vertical-align: middle;
@@ -75,11 +73,18 @@ section{
     background-color: white;
     border-radius: 8px;
 }
-.underscore__nav > a:hover,
-.underscore__nav > a:active{
+.nav > a:hover,
+.nav > a:active{
     color: green;
 }
-
+.work-pictures{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    padding: 5px;
+    display: flex;
+}
 h2{
     margin-top: 5px;
 }
@@ -94,7 +99,8 @@ h2{
 @media screen and (max-width: 768px) {
     header,
     img,
-    nav {
+    nav ,
+    .work-pictures{
       flex-direction: column;
     }
   }
