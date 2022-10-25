@@ -1,19 +1,21 @@
 /* Wire Frame: TODO delete later */
 header, main, footer{
-    border: 1px solid navy;
+    border: 1px solid black;
 }
 
 
 /* reset */
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
+    /* flex-wrap: wrap; */
 }
 
 /* element selectors */
 body{
-    display:flex;
-    flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
 }
@@ -29,14 +31,70 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-
-
+section{
+    margin: 10px;
+    border: 5px solid black;
+    padding: 10px;
+}
+.header{
+    background-color: rgb(119, 160, 37);
+    vertical-align: middle;
+}
+.header-h1{
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: green;
+}
+.footer{
+    text-align: center;
+}
 
 
 /* classes */
 .mt-{
     margin-top: 0.75rem;
 }
-.pt{
+/* .pt{
     padding-top: 1.5rem;
+} */
+
+.picture{
+   display: flex;
+    width: 125px;
+    height: 120px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
 }
+.underscore__nav > a{
+    text-decoration: none;
+    color: black;
+    vertical-align: middle;
+    padding:8px 16px ;
+    background-color: white;
+    border-radius: 8px;
+}
+.underscore__nav > a:hover,
+.underscore__nav > a:active{
+    color: green;
+}
+
+h2{
+    margin-top: 5px;
+}
+.pt > h3 > a{
+    text-decoration: none;
+    color: black;
+}
+.pt > h3 > a:hover,
+.pt > h3 > a:active{
+    color: green;
+}
+@media screen and (max-width: 768px) {
+    header,
+    img,
+    nav {
+      flex-direction: column;
+    }
+  }
