@@ -54,7 +54,7 @@ span[data-horror]:hover::after {
     bottom: 24px;
     min-width: 200px;
     border: 1px #aaaaaa solid;
-    background-color: #13293d;
+    background-color: green;
     padding: 12px;
     color: #fff;
     font-size: 80%;
