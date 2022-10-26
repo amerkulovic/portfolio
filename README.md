@@ -1,6 +1,7 @@
 # Portfolio
 
-##Name of Application
+## Name of Application
+
 The name of my application is "Portfolio" which contains a collection of information about me and how to contact me.
 
 ## Link to my app
