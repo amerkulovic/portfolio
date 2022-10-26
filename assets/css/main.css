@@ -103,10 +103,6 @@ span[data-horror]:hover::after {
     display: flex;
 
 }
-.github-pic{
-    height: 225px;
-    width: 225px;
-}
 .pt > h3 > a{
     text-decoration: none;
     color: black;
@@ -115,12 +111,16 @@ span[data-horror]:hover::after {
 .pt > h3 > a:active{
     color: green;
 }
+#work{
+    display: flex;
+    flex-wrap:wrap;
+}
 @media screen and (max-width: 768px) {
     header,
     nav ,
+    #work,
     .work-pictures{
       flex-direction: column;
-      justify-content: center;
     }
   }
   @media screen and (max-width: 768px) {
