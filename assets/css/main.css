@@ -36,6 +36,9 @@ section{
     border: 5px solid black;
     padding: 10px;
 }
+h2{
+    margin-top: 5px;
+}
 footer{
     text-align: center;
 }
@@ -84,9 +87,6 @@ footer{
 .img{
     padding: 5px;
     display: flex;
-}
-h2{
-    margin-top: 5px;
 }
 .pt > h3 > a{
     text-decoration: none;
