@@ -42,7 +42,26 @@ h2{
 footer{
     text-align: center;
 }
-
+span[data-horror] {
+    position: relative;
+    color: green;
+  }
+span[data-horror]:hover::after {
+    content: attr(data-horror);
+    position: absolute;
+    left: 0px;
+    bottom: 24px;
+    min-width: 200px;
+    border: 1px #aaaaaa solid;
+    background-color: #13293d;
+    padding: 12px;
+    color: #fff;
+    font-size: 80%;
+    z-index: 1;
+  }
+/* .pt{
+    padding-top: 1.5rem;
+} */
 .header{
     vertical-align: middle;
     background-color: yellowgreen;
@@ -53,13 +72,10 @@ footer{
     border-radius: 8px;
     color: green;
 }
-/* classes */
+
 .mt-{
     margin-top: 0.75rem;
 }
-/* .pt{
-    padding-top: 1.5rem;
-} */
 
 .picture{
     width: 125px;
