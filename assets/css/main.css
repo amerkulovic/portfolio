@@ -36,6 +36,10 @@ section{
     border: 5px solid black;
     padding: 10px;
 }
+footer{
+    text-align: center;
+}
+
 .header{
     vertical-align: middle;
     background-color: yellowgreen;
@@ -46,11 +50,6 @@ section{
     border-radius: 8px;
     color: green;
 }
-footer{
-    text-align: center;
-}
-
-
 /* classes */
 .mt-{
     margin-top: 0.75rem;
@@ -80,6 +79,7 @@ footer{
 .work-pictures{
     display: flex;
     justify-content: center;
+    flex: 1 1 0;
 }
 .img{
     padding: 5px;
@@ -98,9 +98,9 @@ h2{
 }
 @media screen and (max-width: 768px) {
     header,
-    img,
     nav ,
     .work-pictures{
       flex-direction: column;
+      justify-content: center;
     }
   }
