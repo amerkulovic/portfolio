@@ -60,9 +60,6 @@ span[data-horror]:hover::after {
     font-size: 80%;
     z-index: 1;
   }
-/* .pt{
-    padding-top: 1.5rem;
-} */
 .header{
     vertical-align: middle;
     background-color: yellowgreen;
@@ -131,6 +128,10 @@ span[data-horror]:hover::after {
       width: 30%;
       height: 30%;
       margin-left: 35%;
-      
     }
+  }
+  @media screen and (max-width: 768px) {
+   h2{
+        text-align: center;
+   }
   }
