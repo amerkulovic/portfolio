@@ -35,6 +35,7 @@ section{
     margin: 10px;
     border: 5px solid black;
     padding: 10px;
+    background-color: white;
 }
 h2{
     margin-top: 5px;
@@ -42,6 +43,7 @@ h2{
 }
 footer{
     text-align: center;
+    background-color: white;
 }
 span[data-horror] {
     position: relative;
@@ -60,6 +62,13 @@ span[data-horror]:hover::after {
     font-size: 80%;
     z-index: 1;
   }
+  .background {
+    background: url("../imgs/smoky-mountains.jpeg");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
 .header{
     vertical-align: middle;
     background-color: yellowgreen;
@@ -97,10 +106,16 @@ span[data-horror]:hover::after {
     display: flex;
     justify-content: center;
     flex: 1 1 0;
+    margin-top: 50px;
+    position: relative;
+    right: 40px;
 }
 .img{
-    margin: 5px 5px;
+    margin: 5px;
     display: flex;
+    width: 95%;
+    height: 95%;
+
 
 }
 .pt > h3 > a{
@@ -115,6 +130,9 @@ span[data-horror]:hover::after {
     display: flex;
     flex-wrap:wrap;
 }
+#work-header{
+    display: inline-block;
+}
 @media screen and (max-width: 768px) {
     header,
     nav ,
@@ -127,7 +145,7 @@ span[data-horror]:hover::after {
     .work-pictures{
       width: 30%;
       height: 30%;
-      margin-left: 35%;
+      margin-left: 43%;
     }
   }
   @media screen and (max-width: 768px) {
