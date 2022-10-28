@@ -162,3 +162,9 @@ span[data-horror]:hover::after {
 
     }
   }
+  @media screen and (max-width: 768px) {
+        h2{
+            text-align: center;
+
+    }
+  }
