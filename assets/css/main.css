@@ -35,7 +35,7 @@ section{
     margin: 10px;
     border: 5px solid black;
     padding: 10px;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.80);
 }
 h2{
     margin-top: 5px;
@@ -43,7 +43,13 @@ h2{
 }
 footer{
     text-align: center;
-    background-color: white;
+    background-color: rgb(18, 165, 18, 0.80);
+}
+footer img{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align:middle;
 }
 span[data-horror] {
     position: relative;
@@ -68,10 +74,14 @@ span[data-horror]:hover::after {
     height: 100%;
     position: fixed;
     z-index: -1;
+    background-size: cover;
+    /* background-size: cover; */
 }
 .header{
     vertical-align: middle;
-    background-color: yellowgreen;
+    /* background-color: rgb(115, 192, 0); */
+    background: url("../imgs/forest-hd.jpg");
+    background-size: 300px;
 }
 .header-h1{
     background-color: white;
@@ -115,8 +125,6 @@ span[data-horror]:hover::after {
     display: flex;
     width: 95%;
     height: 95%;
-
-
 }
 .pt > h3 > a{
     text-decoration: none;
@@ -149,7 +157,8 @@ span[data-horror]:hover::after {
     }
   }
   @media screen and (max-width: 768px) {
-   h2{
-        text-align: center;
-   }
+    .header{
+        background-size: 450px;
+
+    }
   }
