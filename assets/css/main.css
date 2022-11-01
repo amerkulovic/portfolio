@@ -168,4 +168,12 @@ span[data-horror]:hover::after {
   h2 {
     text-align: center;
   }
+  @media screen and (max-width: 281px) {
+    .nav > a {
+      display: flex;
+    }
+    .header {
+      background-size: cover;
+    }
+  }
 }
