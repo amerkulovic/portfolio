@@ -1,61 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amer's portfolio</title>
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-<body>
-  <div class="background"></div>
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="background"></div>
     <!--Header  -->
-   <header class="header">
-    <h1 class="header-h1">Amer Kulovic</h1>
-    <img class="picture" src="./assets/imgs/IMG_1469.jpg" alt="My profile picture.">
+    <header class="header">
+      <h1 class="header-h1">Amer Kulovic</h1>
+      <img
+        class="picture"
+        src="./assets/imgs/IMG_1469.jpg"
+        alt="My profile picture."
+      />
 
-    <nav class="nav">
+      <nav class="nav">
         <a href="#about">About</a>
         <a href="#work">Work</a>
         <a href="#contact">Contact</a>
-  </nav>
-   </header>
-   <main>
-     <!-- About  This will be a short paragraph about me and has an image.-->
-    <section id="about" >
-        <h2>About</h2>
-        <p>My name is Amer Kulovic. I am 22 years old and am looking to have a career as a software engineer!
-          I have a twin brother who works as a software engineer and he helps me a lot in learning code. Some hobbies
-          of mine are playing basketball, weightlifting, and watching movies. I especially love horror movies and love watching
-          the <span data-horror="Friday the 13th, Nightmare on Elm Street, Halloween">classics</span> from the 80's!
+      </nav>
+      <div class="overlay hidden"></div>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1 class="modal-header">Woah!!!</h1>
+        <p>
+          You can get out of here if you press outside the box, press the x, or
+          hit the escape button on your keyboard!
         </p>
-    </section>
+      </div>
+    </header>
+    <main>
+      <!-- About  This will be a short paragraph about me and has an image.-->
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          My name is Amer Kulovic. I am 22 years old and am looking to have a
+          career as a software engineer! I have a twin brother who works as a
+          software engineer and he helps me a lot in learning code. Some hobbies
+          of mine are playing basketball, weightlifting, and watching movies. I
+          especially love horror movies and love watching the
+          <span
+            data-horror="Friday the 13th, Nightmare on Elm Street, Halloween"
+            >classics</span
+          >
+          from the 80's!
+        </p>
+      </section>
       <!-- Work Five image placeholders of future projects, HW1 as a link-->
-    <section id="work" class="pt">
+      <section id="work" class="pt">
         <h2 id="work-header">Work</h2>
         <div class="work-pictures">
-         <a href=" https://amerkulovic.github.io/challenge-1/"> <img class="img" src="./assets/imgs/Horiseon.jpeg" alt="Horiseon Website"></a>
-         <a href="https://github.com/amerkulovic?tab=repositories"> <img class="img" src="./assets/imgs/github225.png" alt="GitHub Website"></a>
-         <a href="https://www.linkedin.com/in/amer-kulovic-523525163/"> <img class="img" src="./assets/imgs/LinkedIn.png" alt="LinkedIn Website"></a>
-      </div>
-    </section>
-   <!-- Contact Info Link to GitHub account-->
-    <section id="contact" class="pt">
+          <a href=" https://amerkulovic.github.io/challenge-1/">
+            <img
+              class="img"
+              src="./assets/imgs/Horiseon.jpeg"
+              alt="Horiseon Website"
+          /></a>
+          <a href="https://github.com/amerkulovic?tab=repositories">
+            <img
+              class="img"
+              src="./assets/imgs/github225.png"
+              alt="GitHub Website"
+          /></a>
+          <a href="https://www.linkedin.com/in/amer-kulovic-523525163/">
+            <img
+              class="img"
+              src="./assets/imgs/LinkedIn.png"
+              alt="LinkedIn Website"
+          /></a>
+        </div>
+      </section>
+      <!-- Contact Info Link to GitHub account-->
+      <section id="contact" class="pt">
         <h2>Contact</h2>
-        <h3><a href="https://github.com/amerkulovic">GitHub</a>
-        </h3>
+        <h3><a href="https://github.com/amerkulovic">GitHub</a></h3>
         <h3>
-        <a href="">(505) 503-4455</a>
-      </h3>
-      <h3>308 Negra Arroyo Lane</h3>
-    </section>
-  </main>
+          <a href="">(505) 503-4455</a>
+        </h3>
+        <h3>308 Negra Arroyo Lane</h3>
+      </section>
+    </main>
 
-<footer>
+    <footer>
       <!-- Footer "Made by Amer K."-->
-      <div>Made by Amer K! <img src="./assets/imgs/grizzly-icon.png" alt="Bear icon"></div>
-</footer>
-
-</body>
+      <div>
+        Made by Amer K!
+        <img src="./assets/imgs/grizzly-icon.png" alt="Bear icon" />
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
