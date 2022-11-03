@@ -112,7 +112,7 @@ span[data-horror]:hover::after {
   width: 70%;
   background-color: white;
   padding: 6rem;
-  border-radius: 5px;
+  border-radius: 100px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
@@ -122,6 +122,9 @@ span[data-horror]:hover::after {
 .modal-header {
   text-align: center;
   color: green;
+}
+.modal-p {
+  text-align: center;
 }
 .overlay {
   position: absolute;
