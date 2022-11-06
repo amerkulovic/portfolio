@@ -3,28 +3,19 @@ header,
 main,
 footer {
   border: 1px solid black;
+  padding: 1.5rem;
 }
 
 /* reset */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
   padding: 0;
-  /* flex-wrap: wrap; */
-}
-
-/* element selectors */
-body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  height: 100vh;
-}
-
-header,
-main,
-footer {
-  padding: 1.5rem;
+  min-height: 100vh;
 }
 main {
   flex-grow: 1;
@@ -78,7 +69,6 @@ span[data-horror]:hover::after {
   position: fixed;
   z-index: -1;
   background-size: cover;
-  /* background-size: cover; */
 }
 .header {
   vertical-align: middle;
@@ -112,12 +102,19 @@ span[data-horror]:hover::after {
   width: 70%;
   background-color: white;
   padding: 6rem;
-  border-radius: 100px;
+  border-radius: 50px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
 .close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
   cursor: pointer;
+  border: none;
+  background: none;
 }
 .modal-header {
   text-align: center;
@@ -127,7 +124,7 @@ span[data-horror]:hover::after {
   text-align: center;
 }
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -191,26 +188,62 @@ span[data-horror]:hover::after {
 }
 @media screen and (max-width: 768px) {
   .work-pictures {
-    width: 30%;
+    width: 29%;
     height: 30%;
     margin-left: 43%;
+    margin-top: 0;
+  }
+  .picture {
+    width: 70px;
+    height: 60px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  .header-h1 {
+    font-size: 1em;
   }
 }
-@media screen and (max-width: 768px) {
-  .header {
-    background-size: 450px;
+
+@media screen and (max-width: 470px) {
+  .work-pictures {
+    width: 39%;
+    height: 30%;
+    margin-left: 43%;
+    margin-top: 0;
   }
-}
-@media screen and (max-width: 768px) {
-  h2 {
-    text-align: center;
-  }
-  @media screen and (max-width: 281px) {
-    .nav > a {
-      display: flex;
+  @media screen and (max-width: 360px) {
+    .work-pictures {
+      width: 44%;
+      height: 30%;
+      margin-left: 43%;
+      margin-top: 0;
     }
-    .header {
-      background-size: cover;
+    @media screen and (max-width: 300px) {
+      .work-pictures {
+        width: 54%;
+        height: 30%;
+        margin-left: 43%;
+        margin-top: 0;
+      }
+      @media screen and (max-width: 768px) {
+        .header {
+          background-size: 450px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        h2 {
+          text-align: center;
+        }
+        @media screen and (max-width: 281px) {
+          .nav > a {
+            display: flex;
+          }
+          .header {
+            background-size: cover;
+          }
+        }
+      }
     }
   }
 }
