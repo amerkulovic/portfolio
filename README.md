@@ -6,7 +6,7 @@ The name of my application is "Portfolio" which contains a collection of informa
 
 ## Link to my app
 
-file:///Users/amerkulovic/code/portfolio/index.html
+[Portfolio](https://amerkulovic.github.io/portfolio/)
 
 ## Purpose
 
